@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>Collin Burris Portfolio</title>
+  <script src="https://kit.fontawesome.com/b7fc9ba2ca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./JavaScript-Library/projects/portfolio/style.css">
+</head>
+<body>
+    <header>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home <span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Skillsets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#work">My Work</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    </header>
+    
+
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hello, <br> I am <strong>Collin Burris</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">Aspiring Web Developer </p>
+        <img src="./JavaScript-Library/projects/portfolio/portfolioAssets/lastPic.jpg" alt="My main pic">
+    </section>
+    
+    
+    <section class="my-services" id="services">
+        <h1 class="section__title section__title--services">Skillsets:</h1>
+        <div class="services">
+            <div class="service">
+                <h3>CSS</h3>
+                <p>Beginner Level</p>
+            </div> 
+
+            <div class="service">
+              <h3>Html</h3>
+              <p>Beginner Level</p>
+          </div> 
+
+          <div class="service">
+            <h3>JavaScript</h3>
+            <p>Beginner Level</p>
+        </div>
+            
+            <div class="service">
+                <h3>Bootstrap</h3>
+                <p>Beginner Level</p>
+            </div>
+            
+            <div class="service">
+                <h3>GitHub</h3>
+                <p>Beginner Level</p>
+            </div> 
+        </div>
+
+          <a href="#work" class="workbtn">My Work</a>
+    </section>
+    
+
+    <section class="about-me" id="about">
+       <h2 class="section__title section__title--about">About Me:</h2>
+       <p class="section__subtitle section__subtitle2--about"></p>
+       
+       <div class="about-me__body">
+           <p>My name is Collin Burris, and I am an aspiring web developer located in Indianapolis. I have had many different jobs in many different fields which I feel has given me a wide-range of experience and skillsets. </p>
+           <p>I've always been fascinated by technology and thought this would be the perfect time to pursue a career in which I get to learn and grow in an area that I am interested in rather than simply a job for money. I have a wide range of interests but in my free time you can usually find me out for a run, trying out a new beer, or just hanging with my cat Mango.</p>
+       </div>
+       
+       <img src="./JavaScript-Library/projects/portfolio/portfolioAssets/mangoPic.jpg" alt="Pic2">
+    </section>
+    
+    <section class="my-work" id="work">
+        <h2 class="section__title">My work</h2>
+        <p class="section__subtitle"></p>
+        
+          <div class="card-group">
+            <div class="card">
+              <img src="./JavaScript-Library/projects/portfolio/portfolioAssets/StaticLayout.png"  class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="https://coburris.github.io/staticLayout/" h5 class="card-title">Static Layout</h5>
+                <p class="card-text">A static version of a home page.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./JavaScript-Library/projects/portfolio/portfolioAssets/crewmate.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <a href="https://codepen.io/coburris/pen/mdEamwx" h5 class="card-title">Crewmate</h5>
+                <p class="card-text">A creature created using only CSS</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="..." class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Random Picture Generator</h5>
+                <p class="card-text">A webpage that allows you to generate random.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <p> Please reach out with any questions at
+        <a href="mailto:collinburris94@gmail.com" class="footer__link">collinburris94@gmail.com</a>
+
+      </p>
+      <form id="contactform" action="https://formspree.io/f/mnqooawj" method="POST">
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+            </div>
+            <div class="col-sm-6 form-group">
+              <input class="form-control" id="email" name="_replyto" placeholder="Email" type="email" required>
+            </div>
+          </div>
+          <textarea class="form-control" id="comments" name="message" placeholder="Message" rows="5"></textarea><br>
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+        <input type="hidden" name="_next" value="//peek.solutions/confirmation.html" />
+        <input type="text" name="_gotcha" style="display:none" />   
+        </form>
+    
+    <footer>
+
+        <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://codepen.io/coburris"><i class="fab fa-codepen"></i></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://www.linkedin.com/in/collin-burris-874943a5/"><i class="fab fa-linkedin"></i></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://github.com/coburris?tab=repositories"><i class="fab fa-github-square"></i></a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="https://my.indeed.com/p/collinb-fat6hrx"><i class="fas fa-file"></i></a>
+            </li>
+        </ul>
+    </footer>
+    
+</body>
+</html>
