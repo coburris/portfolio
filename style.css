@@ -127,7 +127,7 @@ h3 { font-size: var(--fs-h3) }
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(/JavaScript-Library/projects/portfolio/portfolioAssets/Website-Design-Background-1.jpg);
+    background-image: url(./portfolioAssets/Website-Design-Background-1.jpg);
     background-size: cover;
     color: var(--clr-light);
 
